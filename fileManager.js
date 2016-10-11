@@ -4,7 +4,7 @@ var _ = require('underscore');
 var jsonfile = require('jsonfile')
 
 var rf = function (file){
-	return fs.readFileSync(file, 'utf8').replace(/(\r\n|\n|\r|\t|\f|\.|\?|\!|\,|\:|\;|\||\'|\(|\)|\[|\]|\“|\”|\‘|\’|(\s\s+)|\-|\"|\\|\/|\*|\_|\<|\>)/gm," ").split(' ');
+	return fs.readFileSync(file, 'utf8').replace(/(\r\n|\n|\r|\t|\f|\.|\?|\!|\,|\:|\;|\||\'|\(|\)|\[|\]|\“|\”|\‘|\’|(\s\s+)|\-|\"|\\|\/|\*|\_|\<|\>|\~|\{|\})/gm," ").split(' ');
 };
 
 var wf = function (data, file){

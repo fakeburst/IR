@@ -8,6 +8,7 @@
     "bintrees": "^1.0.1",
     "hashes": "^0.1.4",
     "jsonfile": "^2.3.1",
+    "mrcluster": "0.0.23",
     "underscore": "^1.8.3"
   }
 }
